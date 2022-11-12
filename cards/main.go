@@ -4,7 +4,10 @@ package main
 func main() {
 	cards := newDesk()
 
-	cards.saveToFile("cards.txt")
+	myCards, _ := deal(cards, 12)
+
+	myCards.shuffle()
+	myCards.print()
 
 	// cards.print()
 
