@@ -4,6 +4,8 @@ package main
 func main() {
 	cards := newDesk()
 
-	cards.print()
+	cards.saveToFile("cards.txt")
+
+	// cards.print()
 
 }
